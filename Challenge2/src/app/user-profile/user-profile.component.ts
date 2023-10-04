@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-profile.component.scss']
 })
 export class UserProfileComponent {
+  user = {
+    name: 'Doe',
+    firstName: 'John',
+    age: 25,
+    quote: '',
+    photo: 'https://randomuser.me/api/portraits/lego/2.jpg'
+
+  };
+
+  public canShowAge = false
+  public showAge() {
+    this.canShowAge = !this.canShowAge
+  }
 
 }
