@@ -20,4 +20,20 @@ export class UserProfileComponent {
     this.canShowAge = !this.canShowAge
   }
 
+
+
+  public isVital: boolean = false
+
+  public isListDisplayed: boolean = false
+
+
+  public displayList() {
+    this.isListDisplayed = !this.isListDisplayed
+
+  }
+
+  public vital() {
+    this.isVital = !this.isVital
+  }
+  songList: string[] = ["Alejandro", "Ne me quitte pas", "Le temps est bon"];
 }

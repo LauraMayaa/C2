@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FormsModule } from '@angular/forms';
+import { HighlightDirective } from './highlight.directive';
+import { DisplayGuestsDirective } from './display-guests.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
+    HighlightDirective,
+    DisplayGuestsDirective,
   ],
   imports: [
     BrowserModule,
