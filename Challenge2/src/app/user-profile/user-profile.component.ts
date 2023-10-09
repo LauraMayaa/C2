@@ -15,7 +15,7 @@ export class UserProfileComponent {
 
   };
 
-  public canShowAge = false
+  public canShowAge = true
   public showAge() {
     this.canShowAge = !this.canShowAge
   }
